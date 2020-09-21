@@ -22,7 +22,7 @@ public class SeleniumTest {
 
     @BeforeClass
     public static void start() {
-        final String webDriverPath = "replace with the path of the web driver";
+        final String webDriverPath =  "driver/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", webDriverPath);
     }
 
