@@ -22,7 +22,7 @@ public class SeleniumTest {
 
     @BeforeClass
     public static void start() {
-        final String webDriverPath =  "driver/chromedriver.exe";
+        final String webDriverPath =  "/var/lib/jenkins/workspace/projet-integrations-tests-perf/driver/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", webDriverPath);
     }
 
