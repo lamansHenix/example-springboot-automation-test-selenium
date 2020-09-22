@@ -33,7 +33,7 @@ public class SeleniumTest {
 
     @Test
     public void test() throws InterruptedException {
-        driver.get("http://localhost:8083");
+        driver.get("http://192.168.4.10:8083");
 
         Thread.sleep(1500);
 
