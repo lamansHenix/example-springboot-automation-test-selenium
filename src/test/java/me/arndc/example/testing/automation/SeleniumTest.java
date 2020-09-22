@@ -31,6 +31,8 @@ public class SeleniumTest {
     public void setUp() {
         
         ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("useAutomationExtension", false);
+        options.addArguments("--headless"); // open Browser in maximized mode
         options.addArguments("start-maximized"); // open Browser in maximized mode
         options.addArguments("disable-infobars"); // disabling infobars
         options.addArguments("--disable-extensions"); // disabling extensions
