@@ -1,5 +1,7 @@
 package me.arndc.example.testing.automation;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -43,12 +45,9 @@ public class SeleniumTest {
     public void test() throws InterruptedException {
         
     	driver.get("http://192.168.2.10:8080");
+    	
+    	assertTrue(driver.getTitle().equalsIgnoreCase("Spring Demo Project"));
 
-    	if (driver.getTitle().equalsIgnoreCase("Spring Demo Project")) {
-			System.out.println("Je suis bien dans mon site");
-		} else {
-			System.out.println("Désolé, mais je suis ailleurs !");
-		}
     }
 
     @After
